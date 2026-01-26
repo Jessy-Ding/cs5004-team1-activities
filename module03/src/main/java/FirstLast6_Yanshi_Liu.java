@@ -1,8 +1,8 @@
 /**
  * CodingBat Array-1: firstLast6
  * @author Yanshi Liu
- * * @date 2026-01-25
- * @course CS5004 (Object-Oriented Programming)
+ * @since 2026-01-25
+ * course CS5004 (Object-Oriented Programming)
  */
 public class FirstLast6_Yanshi_Liu {
 
