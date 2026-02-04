@@ -1,24 +1,18 @@
 .idea/
 
-# Default: ignore everything in repo root and modules
-*
-
-# Keep this file
-!.gitignore
-
-# Keep module directories and their src trees
-!module*/
-module*/
-!module*/src/
-!module*/src/**
-module*/src/**/*.iml
-
 # Ignore Gradle/tooling artifacts
 .gradle/
-build/
+**/build/
 .kotlin/
 gradle/
 gradlew
 gradlew.bat
-build.gradle
-settings.gradle
+*.iml
+**/*.iml
+
+# Root level gradle files (keep if you want, but usually ignored in this repo)
+# build.gradle
+# settings.gradle
+
+# Keep module directories and their contents, but exclude build folders
+!module*/
