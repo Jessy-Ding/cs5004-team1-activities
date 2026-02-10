@@ -24,16 +24,18 @@ public class Fix34 {
                         if (nums[i] == 3) {
 
                                 // find the next 4 that is NOT already after a 3
-                                while (nums[fourIndex] != 4) {
+                                while (fourIndex < nums.length && nums[fourIndex] != 4) {
                                         fourIndex++;
                                 }
 
-                                // swap nums[i+1] and nums[fourIndex]
-                                int temp = nums[i + 1];
-                                nums[i + 1] = nums[fourIndex];
-                                nums[fourIndex] = temp;
-
-                                fourIndex++; // move one index for next search
+                                if (fourIndex < nums.length) {
+                                    // swap nums[i+1] and nums[fourIndex]
+                                    int temp = nums[i + 1];
+                                    nums[i + 1] = nums[fourIndex];
+                                    nums[fourIndex] = temp;
+                                    
+                                    fourIndex++; // move one index for next search
+                                }
                         }
                 }
 
