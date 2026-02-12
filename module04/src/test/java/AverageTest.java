@@ -4,20 +4,20 @@ import org.junit.Test;
 import static org.junit.Assert.assertEquals;
 
 /**
- * JUnit tests for class average.
+ * JUnit tests for class Average.
  *
  * @author Yikang Liu
  * @since 2026-02-03
  * Course: CS5004 (Object-Oriented Programming)
  */
-public class averageTest {
+public class AverageTest {
 
     private static final double DELTA = 1e-9;
-    private average avg;
+    private Average avg;
 
     @Before
     public void setUp() {
-        avg = new average();
+        avg = new Average();
     }
 
     @Test
